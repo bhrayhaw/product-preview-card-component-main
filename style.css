@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@500;700&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: hsl(30, 38%, 92%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2em;
+    height: 100vh;
+}
+
+.product-card {
+    display: grid;
+    align-items: center;
+}
+
+.product-card {
+    background-color: hsl(0, 0%, 100%);
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+}
+
+.product-card__image {
+    
+}
+
+.product-card__img {
+    max-width: 100%;
+    border-radius: 10px 10px 0 0px;
+}
+
+.product-card__text {
+    padding: 20px;
+}
+
+.product-card__ribbon-text {
+    margin-top: 0;
+    font-family: Montserrat, serif;
+    text-transform: uppercase;
+    color:hsl(228, 12%, 48%);
+    font-size: 0.875rem;
+    letter-spacing: 5px;
+}
+
+.product-card__product-name {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: fraunces, sans-serif;
+    color: hsl(212, 21%, 14%);
+    font-weight: 700px;
+    font-size: 35px;
+}
+
+.product-card__product-description {
+    font-family: Montserrat, serif;
+    color: hsl(228, 12%, 48%);
+    font-size: 0.875rem;
+}
+
+.product-card__product-prices {
+   display: flex;
+   align-items: center;
+}
+
+.product-card__product-price {
+    font-size: 2rem;
+    color: hsl(158, 36%, 37%);
+    font-family: fraunces, sans-serif;
+}
+
+s{
+    margin: 20px;
+    font-family: Montserrat, serif;
+    color:hsl(228, 12%, 48%);
+}
+
+.product-card__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 335px;
+    height: 40px;
+    color: hsl(0, 0%, 100%);
+    border-style: none;
+    border-radius: 5px;
+    background-color: hsl(158, 36%, 37%);
+}
+
+button span{
+    margin: 10px;
+    font-family: montserrat;
+    font-size: 12px;
+}
+
+.btn--green:active {
+    background-color: hsl(212, 21%, 14%);
+}
+
+
+@media (min-width: 500px) {
+    .product-card{
+        column-gap: 1em;
+        grid-template-columns: repeat(2, 1fr);
+    } 
+    .product-card__img {
+        border-radius: 10px 0 0 10px;
+    }     
+}
+
